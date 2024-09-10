@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-direction: column;
+}
+
+#chess-container {
+    display: flex;
+}
+
+#chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-template-rows: repeat(8, 50px);
+    gap: 0;
+    position: relative;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+}
+
+.white {
+    background-color: #f0f0f0;
+}
+
+.black {
+    background-color: #808080;
+    color: #eee;
+}
+
+.queen{
+    color: #000
+}
+
+.pawn{
+    color: #f3cfb9;
+}
+
+.labels {
+    display: grid;
+    gap: 0;
+}
+
+#labels-left, #labels-right {
+    grid-template-rows: repeat(8, 50px);
+}
+
+#labels-bottom , #labels-top {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    margin-top: 8px;
+}
+
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    width: 50px;
+    height: 50px;
+    font-family: 'Bona Nova SC', sans-serif;
+    font-size: 24px;
+}
+
+.piece {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+#input-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#piece-position-queen, #piece-position-pawn {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#place-piece, #play-game, #reset-board{
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.hidden{
+    display: none;
+}
+
+.alert {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.alert-win {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.alert-lose {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
