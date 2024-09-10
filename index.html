@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC&display=swap" rel="stylesheet">
+        <title>Chess Board</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="labels-top" class="labels"></div>
+        <div id="chess-container">
+            <div id="labels-left" class="labels"></div>
+            <div id="chessboard"></div>
+            <div id="labels-right" class="labels"></div>
+        </div>
+        <div id="labels-bottom" class="labels"></div>
+        <div id="input-container">
+            <div class="test">
+                <input type="text" id="piece-position-queen" placeholder="Enter position (e.g., e2)">
+                <input type="text" id="piece-position-pawn" placeholder="Enter position (e.g., e2)">    
+            </div>
+            <br>
+            <div class="test">
+                <button id="place-piece">Show</button>
+                <button id="play-game">Play</button>
+                <button id="reset-board">Reset</button>
+            </div>   
+        </div>
+       <script src="main.js"></script>
+    </body>
+</html>
